@@ -705,7 +705,7 @@ function initparms() {
   async function fetchColors(colorId) {
     try {
       const response = await fetch(
-        `http://52.14.23.124:80/colors?color_id=${encodeURIComponent(colorId)}`,
+        `https://l4lz3ceetl.execute-api.us-east-2.amazonaws.com/prod/wheel/color?color_id=${encodeURIComponent(colorId)}`,
         {
           method: "GET",
           headers: { "Content-Type": "application/json" },
@@ -727,7 +727,7 @@ function initparms() {
   async function fetchWheel(wheelname) {
     try {
       const response = await fetch(
-        `http://52.14.23.124:80/wheels?wheel_id=${encodeURIComponent(wheelname)}`,
+        `https://l4lz3ceetl.execute-api.us-east-2.amazonaws.com/prod/wheel/getwheel?wheel_id=${encodeURIComponent(wheelname)}`,
         {
           method: "GET",
           headers: { "Content-Type": "application/json" },
@@ -789,7 +789,7 @@ wheelForm.addEventListener('submit', async function(event) {
             type: type,
             quantity: quantity
         };
-        const response = await fetch('http://52.14.23.124:80/genwheel', {
+        const response = await fetch('https://l4lz3ceetl.execute-api.us-east-2.amazonaws.com/prod/wheel/genwheel', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
