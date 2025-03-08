@@ -814,7 +814,7 @@ wheelForm.addEventListener('submit', async function(event) {
         setTitle();
         refreshwheel();
     } catch (error) {
-        console.error("error");
+       console.error('Caught an error:', error);
     } finally {
         stopAnimation();
         generateButton.disabled = false;
