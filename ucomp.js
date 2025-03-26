@@ -705,7 +705,7 @@ async function initpageinfo() {
 async function fetchColors(colorId) {
   try {
     const response = await fetch(
-      `https://mn84ezfua1.execute-api.us-east-2.amazonaws.com/prod/colors?color_id=${encodeURIComponent(colorId)}`,
+      `https://api.garguide.com/colors?color_id=${encodeURIComponent(colorId)}`,
       {
         method: "GET",
         headers: { "Content-Type": "application/json" },
@@ -727,7 +727,7 @@ async function fetchColors(colorId) {
 async function fetchWheel(wheelname) {
   try {
     const response = await fetch(
-      `https://mn84ezfua1.execute-api.us-east-2.amazonaws.com/prod/wheels?wheel_id=${encodeURIComponent(wheelname)}`,
+      `https://api.garguide.com/wheels?wheel_id=${encodeURIComponent(wheelname)}`,
       {
         method: "GET",
         headers: { "Content-Type": "application/json" },
@@ -789,7 +789,7 @@ wheelForm.addEventListener('submit', async function(event) {
           type: type,
           quantity: quantity
       };
-      const response = await fetch('https://mn84ezfua1.execute-api.us-east-2.amazonaws.com/prod/genwheel', {
+      const response = await fetch('https://api.garguide.com/genwheel/', {
           method: 'POST',
           headers: {
               'Content-Type': 'application/json'
