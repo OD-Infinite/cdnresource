@@ -55,7 +55,7 @@ dialog{border:none;border-radius:8px;padding:20px;box-shadow:0 4px 8px rgba(0,0,
 .centered{justify-content:center}
 .settingpanel{width:90vw;height:70vh;background-color:#ebebeb}
 .settingtitle{display:flex;align-items:center;font-size:28px;font-weight:700;color:#202124;margin:5px;text-align:left}
-.settingbody{margin:10px 0;display:flex;background-color:#f1f3f4;border-radius:10px;padding:20px 10px 20px 0;box-shadow:0 2px 5px rgba(0,0,0,.1)}
+.settingbody{margin:10px 0;display:flex;background-color:#f4f3f1;border-radius:10px;padding:20px 10px 20px 0;box-shadow:0 2px 5px rgba(0,0,0,.1)}
 .setting-footer{display:flex;justify-content:flex-end;padding-top:20px;position:absolute;bottom:20px;right:20px}
 .setting-footer .btn{padding:10px 30px;border:none;border-radius:5px;cursor:pointer;font-size:14px;color:#fff;margin:0 10px;background-color:#4b8df8;transition:transform .3s ease,background-color .3s ease}
 .setting-footer .btn:hover{background-color:#4a90e2;transform:scale(1.05)}
@@ -99,7 +99,7 @@ ion-icon{font-size:20px}
 #navimg{flex:1;border:2px;border-color:#333}
 #navbtngroup{flex:1;font-size:12px}
 #navbtn{cursor:pointer;color:#fff;background-color:#f4b400;border-radius:10px;padding:10px}
-.ai-button{position:relative;width:200px;height:40px;padding:0;border-radius:20px;background:linear-gradient(45deg,#673ab7,#3f51b5,#ec407a);color:#fff;font-size:16px;font-weight:700;text-align:center;line-height:40px;cursor:pointer;transition:transform .2s ease-in-out,box-shadow .2s ease-in-out;border:none;box-shadow:0 4px 6px rgba(0,0,0,.2);overflow:hidden}
+.ai-button{position:relative;width:200px;height:40px;padding:0;border-radius:20px;background:linear-gradient(45deg,#673ab7,#3f51b5,#ec407a);color:#fff;font-size:16px;font-weight:400;text-align:center;line-height:40px;cursor:pointer;transition:transform .2s ease-in-out,box-shadow .2s ease-in-out;border:none;box-shadow:0 4px 6px rgba(0,0,0,.2);overflow:hidden}
 .ai-button:active{transform:translateY(1px);box-shadow:0 2px 5px rgba(0,0,0,.2)}
 .dialog-overlay{position:fixed;top:0;left:0;right:0;bottom:0;background-color:rgba(0,0,0,.5);display:flex;justify-content:center;align-items:center;z-index:100;opacity:0;visibility:hidden;transition:opacity .3s,visibility .3s}
 .dialog-overlay.active{opacity:1;visibility:visible}
@@ -110,7 +110,7 @@ ion-icon{font-size:20px}
 .dialog-description{margin-bottom:24px;color:#666;line-height:1.5;text-align:center}
 .form-group{margin-bottom:16px}
 .form-label{display:block;margin-bottom:8px;font-weight:700;color:#555}
-.form-input{width:100%;padding:10px;border:1px solid #ddd;border-radius:8px;font-size:16px;box-sizing:border-box}
+.form-input{width:100%;padding:10px;border:1px solid rgb(255, 253, 215);border-radius:8px;font-size:16px;box-sizing:border-box}
 .form-input:focus{outline:0;border-color:#3f51b5;box-shadow:0 0 0 2px rgba(63,81,181,.2)}
 @media screen and (min-width:1001px){.color-card{width:12vh;height:12vh}
 .img-card{width:12vh;height:12vh}
@@ -144,3 +144,4 @@ ion-icon{font-size:20px}
 .dialog{padding:16px}
 .dialog-title{font-size:20px}
 }
+.ww{color:#fada83}

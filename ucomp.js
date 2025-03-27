@@ -810,7 +810,7 @@ wheelForm.addEventListener('submit', async function(event) {
       }else if(quantity<=30){
         wheelfontsize=10
       }
-      spintitle="the AI wheel For "+type;
+      spintitle=type;
       setTitle();
       refreshwheel();
   } catch (error) {
