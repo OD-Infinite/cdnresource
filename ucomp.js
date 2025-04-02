@@ -45,11 +45,9 @@ function initparms() {
   window.items = null;
   window.adHtml = `
   <ins class="adsbygoogle"
-     style="display:block"
+     style="display:inline-block;width:300px;height:50px"
      data-ad-client="ca-pub-4426257135675062"
-     data-ad-slot="3290018487"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>`;
+     data-ad-slot="3290018487"></ins>`;
 }
 window.onload = () => {
   initparms();
