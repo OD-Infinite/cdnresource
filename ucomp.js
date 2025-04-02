@@ -43,6 +43,13 @@ function initparms() {
   window.spinSound = document.getElementById("spin-sound");
   window.successSound = document.getElementById("success-sound");
   window.items = null;
+  window.adHtml = `
+  <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4426257135675062"
+     data-ad-slot="3290018487"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>`;
 }
 window.onload = () => {
   initparms();
@@ -170,12 +177,16 @@ function raffle() {
     spinSound.pause();
     spinSound.currentTime = 0;
     let dialog = document.getElementById("myDialog");
+    let resad = document.getElementById("resad");
     let p = document.getElementById("dialogtext");
     p.textContent = items[index].innerText;
     p.classList.remove("textsize3", "textsize2", "textsize");
     if(p.textContent.length>=100){p.classList.add("textsize3");}
     else if(p.textContent.length>=40&&p.textContent.length<100){p.classList.add("textsize2");}
     else{p.classList.add("textsize");};
+    resad.innerHTML="";
+    resad.innerHTML=adHtml;
+    (adsbygoogle = window.adsbygoogle || []).push({});
     resultindex = index;
     dialog.showModal();
     startFireworks();
@@ -242,6 +253,8 @@ function closeDialog() {
   document.getElementById("myDialog").close();
   let wheel = document.querySelector(".wheel");
   let preani = document.getElementById("preani");
+  let resad = document.getElementById("resad");
+  resad.innerHTML = "";
   stopAndRemoveAnimation(wheel, "myraffle");
   resetAndPlayAnimation(preani, "presetAnime");
 }
