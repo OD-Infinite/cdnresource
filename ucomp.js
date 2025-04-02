@@ -184,11 +184,11 @@ function raffle() {
     if(p.textContent.length>=100){p.classList.add("textsize3");}
     else if(p.textContent.length>=40&&p.textContent.length<100){p.classList.add("textsize2");}
     else{p.classList.add("textsize");};
+    resultindex = index;
+    dialog.showModal();
     resad.innerHTML="";
     resad.innerHTML=adHtml;
     (adsbygoogle = window.adsbygoogle || []).push({});
-    resultindex = index;
-    dialog.showModal();
     startFireworks();
     successSound.play();
   };
