@@ -1,6 +1,6 @@
 function initparms() {
-  window.navimgurl = null;
-  window.shopurl = null;
+  //window.navimgurl = null;
+  //window.shopurl = null;
   window.segments = null;
   window.spintitle = null;
   window.wheelfontsize = null;
@@ -172,6 +172,10 @@ function raffle() {
     let dialog = document.getElementById("myDialog");
     let p = document.getElementById("dialogtext");
     p.textContent = items[index].innerText;
+    p.classList.remove("textsize3", "textsize2", "textsize");
+    if(p.textContent.length>=100){p.classList.add("textsize3");}
+    else if(p.textContent.length>=40&&p.textContent.length<100){p.classList.add("textsize2");}
+    else{p.classList.add("textsize");};
     resultindex = index;
     dialog.showModal();
     startFireworks();
@@ -683,7 +687,7 @@ async function initpageinfo() {
     navimgurl = data.imgurl;
     let colorscheme = data.colorscheme === "" ? "Default" : data.colorscheme;
     colorset = await fetchColors(colorscheme);
-    if(shopurl!==null && navimgurl!==null && shopurl!=="" && navimgurl!==""){
+    /*if(shopurl!==null && navimgurl!==null && shopurl!=="" && navimgurl!==""){
       let nav = document.getElementById("navToShop");
       let navbtn = document.getElementById("navbtn");
       navbtn.addEventListener("click", function () {
@@ -692,7 +696,7 @@ async function initpageinfo() {
       navimg.setAttribute("src",navimgurl);
       nav.classList.remove("hide");
       nav.classList.add("show");  
-    };
+    };*/
   }else{
     colorset=[['#F3D5C0','#D4B499','#889EAF','#506D84'],["#FF885B","#FFE5CF","#557C56","#33372C"],["#343131","#A04747","#D8A25E","#EEDF7A"],["#1B4242","#76ABAE","#31363F","#222831"],["#181C14","#3C3D37","#697565","#ECDFCC"],["#FF8A8A","#F4DEB3","#F0EAAC","#CCE0AC"],["#D1E9F6","#F6EACB","#F1D3CE","#EECAD5"],["#03AED2","#68D2E8","#FDDE55","#FEEFAD"],["#E5D9F2","#F5EFFF","#CDC1FF","#A594F9"],["#B3C8CF","#BED7DC","#F1EEDC","#E5DDC5"]];
     segments=["Yes","No","Yes","No","Yes","No","Yes","No"];

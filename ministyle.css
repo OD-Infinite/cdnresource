@@ -44,7 +44,8 @@ dialog{border:none;border-radius:8px;padding:20px;box-shadow:0 4px 8px rgba(0,0,
 .close-btn:hover{color:red}
 .modal-body{margin:10px 0}
 #result-box{background-color:#f1f3f4;border-radius:10px;padding:40px;box-shadow:0 2px 5px rgba(0,0,0,.1)}
-.resulttext{font-size:48px;font-weight:700;color:#202124;margin:0}
+.resulttext{font-weight:700;color:#202124;margin:0;word-wrap: break-word;white-space: normal;}
+.textsize{font-size:48px;}.textsize2{font-size:35px;}.textsize3{font-size:20px;}
 .modal-footer{display:flex;justify-content:space-around;padding-top:20px}
 .modal-footer .btn{padding:8px;border:none;border-radius:5px;cursor:pointer;font-size:14px;color:#fff;margin:0 10px;background-color:#4b8df8;transition:transform .3s ease,background-color .3s ease}
 .modal-footer .btn:hover{background-color:#4a90e2;transform:scale(1.05)}
@@ -96,9 +97,9 @@ ion-icon{font-size:20px}
 .preview{display:flex;background-color:#fff6ee;color:#000;border-radius:5px;height:60px;text-align:center;align-items:center;justify-content:center;font-size:var(--wheel-font-size)}
 .preview p{margin:0}
 .size-labels{display:flex;justify-content:space-between}
-#navimg{flex:1;border:2px;border-color:#333}
+/*#navimg{flex:1;border:2px;border-color:#333}
 #navbtngroup{flex:1;font-size:12px}
-#navbtn{cursor:pointer;color:#fff;background-color:#f4b400;border-radius:10px;padding:10px}
+#navbtn{cursor:pointer;color:#fff;background-color:#f4b400;border-radius:10px;padding:10px}*/
 .ai-button{position:relative;width:200px;height:40px;padding:0;border-radius:20px;background:linear-gradient(45deg,#673ab7,#3f51b5,#ec407a);color:#fff;font-size:16px;font-weight:400;text-align:center;line-height:40px;cursor:pointer;transition:transform .2s ease-in-out,box-shadow .2s ease-in-out;border:none;box-shadow:0 4px 6px rgba(0,0,0,.2);overflow:hidden}
 .ai-button:active{transform:translateY(1px);box-shadow:0 2px 5px rgba(0,0,0,.2)}
 .dialog-overlay{position:fixed;top:0;left:0;right:0;bottom:0;background-color:rgba(0,0,0,.5);display:flex;justify-content:center;align-items:center;z-index:100;opacity:0;visibility:hidden;transition:opacity .3s,visibility .3s}
