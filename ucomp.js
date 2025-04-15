@@ -48,6 +48,11 @@ function initparms() {
      style="display:inline-block;width:300px;height:50px"
      data-ad-client="ca-pub-4426257135675062"
      data-ad-slot="3290018487"></ins>`;
+     window.adHtml2 = `
+  <ins class="adsbygoogle"
+     style="display:inline-block;width:300px;height:50px"
+     data-ad-client="ca-pub-4426257135675062"
+     data-ad-slot="8561035775"></ins>`;
 }
 window.onload = () => {
   initparms();
@@ -374,9 +379,21 @@ function stopAndRemoveAnimation(element, animename) {
 function Setting() {
   let dialog = document.getElementById("settingDialog");
   dialog.showModal();
-  let theme = document.querySelector(".theme");
-  if (theme.childElementCount == 0) {
-    gencolorcard();
+  // let theme = document.querySelector(".theme");
+  // if (theme.childElementCount == 0) {
+  //   gencolorcard();
+  // }
+  let click = document.getElementById("clickcoundgroup");
+  if (click.childElementCount == 0) {
+    gensound(cliksoundlist, "clickcoundgroup");
+  }
+  let spin = document.getElementById("spincoundgroup");
+  if (spin.childElementCount == 0) {
+    gensound(spinsoundlist, "spincoundgroup");
+  }
+  let done = document.getElementById("donecoundgroup");
+  if (done.childElementCount == 0) {
+    gensound(donesoundlist, "donecoundgroup");
   }
 }
 function closeSettingDialog() {
@@ -766,11 +783,16 @@ const aiButton = document.getElementById("genwheeld");
 const dialogOverlay = document.getElementById('dialogOverlay');
 const dialogClose = document.getElementById('dialogClose');
 const wheelForm = document.getElementById('wheelForm');
+let aidad = document.getElementById("aidad");
 aiButton.addEventListener('click', function() {
   dialogOverlay.classList.add('active');
+  aidad.innerHTML="";
+  aidad.innerHTML=adHtml2;
+  (adsbygoogle = window.adsbygoogle || []).push({});
 });
 dialogClose.addEventListener('click', function() {
   dialogOverlay.classList.remove('active');
+  aidad.innerHTML = "";
 });
 dialogOverlay.addEventListener('click', function(event) {
   if (event.target === dialogOverlay) {
