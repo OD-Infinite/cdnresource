@@ -104,7 +104,7 @@ ion-icon{font-size:20px}
 .ai-button:active{transform:translateY(1px);box-shadow:0 2px 5px rgba(0,0,0,.2)}
 .dialog-overlay{position:fixed;top:0;left:0;right:0;bottom:0;background-color:rgba(0,0,0,.5);display:flex;justify-content:center;align-items:center;z-index:100;opacity:0;visibility:hidden;transition:opacity .3s,visibility .3s}
 .dialog-overlay.active{opacity:1;visibility:visible}
-.dialog{background-color:#fff;border-radius:12px;box-shadow:0 10px 25px rgba(0,0,0,.2);width:90%;max-width:500px;padding:24px;position:relative;transform:translateY(20px);transition:transform .3s}
+.dialog{background-color:#fff;border-radius:12px;box-shadow:0 10px 25px rgba(0,0,0,.2);width:90%;max-width:500px;max-height:650px;padding:24px;position:relative;transform:translateY(20px);transition:transform .3s}
 .dialog-overlay.active .dialog{transform:translateY(0)}
 .dialog-close{position:absolute;top:16px;right:16px;background:0 0;border:none;font-size:24px;line-height:1;cursor:pointer;color:#999}
 .dialog-title{font-size:24px;font-weight:700;margin:0 0 16px 0;color:#333;text-align:center;background:linear-gradient(45deg,#673ab7,#3f51b5,#ec407a);-webkit-background-clip:text;background-clip:text;color:transparent}
