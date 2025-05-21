@@ -1,6 +1,6 @@
 :root{--animation-duration:5s;--base-font-size:16px;--base-font-color:#000000;--wheel-font-size:30px}
 body,html{margin:0;padding:0;font-family:sans-serif;background-color:#fbf5ff;color:#333;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;min-height:100vh;width:100vw;box-sizing:border-box;scroll-behavior:smooth;font-size:var(--base-font-size)}
-.main{min-width:100vw}
+.main{min-width:100vw;display:flex;justify-content:center;}
 .main-content{display:flex;justify-content:space-between;width:100vw;box-sizing:border-box}
 .spintitle{padding:10px 0 0 0;font-size:32px;color:#333;text-shadow:2px 2px 4px rgba(34,34,34,.7);max-width:380px;border:none;background-color:transparent;overflow:hidden;resize:none;white-space:nowrap;word-wrap:normal;text-align:center}
 .spinner-section{position:relative;flex:1;display:flex;justify-content:center;align-items:center;width:50vw;min-width:40vw;box-sizing:border-box}
