@@ -737,7 +737,7 @@ async function initpageinfo() {
 async function fetchColors(colorId) {
   try {
     const response = await fetch(
-      `https://api.garguide.com/colors?color_id=${encodeURIComponent(colorId)}`,
+      `https://wheel.infiopia.com/colors?color_id=${encodeURIComponent(colorId)}`,
       {
         method: "GET",
         headers: { "Content-Type": "application/json" },
@@ -759,7 +759,7 @@ async function fetchColors(colorId) {
 async function fetchWheel(wheelname) {
   try {
     const response = await fetch(
-      `https://api.garguide.com/wheels?wheel_id=${encodeURIComponent(wheelname)}`,
+      `https://wheel.infiopia.com/wheels?wheel_id=${encodeURIComponent(wheelname)}`,
       {
         method: "GET",
         headers: { "Content-Type": "application/json" },
@@ -826,7 +826,7 @@ wheelForm.addEventListener('submit', async function(event) {
           type: type,
           quantity: quantity
       };
-      const response = await fetch('https://api.garguide.com/genwheel/', {
+      const response = await fetch('https://wheel.infiopia.com/genwheel/', {
           method: 'POST',
           headers: {
               'Content-Type': 'application/json'
