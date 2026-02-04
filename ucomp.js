@@ -8,7 +8,7 @@ function initparms() {
   window.colorset = [];
   fontcolorchangeindex = 4;
   window.imglist = [
-    "https://yourspinner.com/wp-content/uploads/2024/11/spin-button-e1737988487588.webp",
+    "https://yourspinner.com/wp-content/uploads/2025/12/s.svg",
     "https://yourspinner.com/wp-content/uploads/2024/10/point1.webp",
     "https://yourspinner.com/wp-content/uploads/2024/10/point2.webp",
     "https://yourspinner.com/wp-content/uploads/2024/10/finger-pointing-to-up-1.webp",
