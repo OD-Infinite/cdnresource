@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   const collectionId = "gid://shopify/Product/"+root.dataset.collectionId;
   const shop = root.dataset.shop;
   console.log('productId:', productId+"; shop:"+shop+"; collection:"+collectionId);
-  
+  let datestr=new Date().toISOString().slice(0, 10);
   // 2. 请求后端 API
   fetch('https://timeline.infiopia.com/getconf', {
       method: 'POST',
@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', async () => {
       body: JSON.stringify({
         product_id: productId,
         collection_id: collectionId,
-        pur_date:new  Date(),
+        pur_date:datestr,
       }),
   })
   .then((res) => {
