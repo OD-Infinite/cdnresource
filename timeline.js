@@ -6,12 +6,12 @@ document.addEventListener('DOMContentLoaded', async () => {
   if (!root) return;
 
   const productId = "gid://shopify/Product/"+root.dataset.productId;
-  const collectionId = "gid://shopify/Product/"+root.dataset.collectionId;
+  const collectionId = "gid://shopify/Collection/"+root.dataset.collectionId;
   const shop = root.dataset.shop;
   console.log('productId:', productId+"; shop:"+shop+"; collection:"+collectionId);
   let datestr=new Date().toISOString().slice(0, 10);
   // 2. 请求后端 API
-  fetch('https://timeline.infiopia.com/getconf', {
+  fetch('timeline.infiopia.com/getconf', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
